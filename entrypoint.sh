@@ -38,6 +38,6 @@ git remote add $WPENGINE_ENV git@$WPENGINE_HOST:$WPENGINE_ENV/$WPENGINE_ENVIRONM
 git remote -v
 
 echo "PUSHING TO WP-ENGINE: $WPENGINE_ENV"
-git push -f $WPENGINE_ENV
+git push -fu $WPENGINE_ENV HEAD:master
 
 echo "ALL DONE"
